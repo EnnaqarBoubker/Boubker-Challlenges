@@ -8,10 +8,10 @@ int main ()
 	printf("la distance en Mile: ");
 	 scanf("%f",&Mile);
 	
-	Metre = Mile * 1.609 * 1000;
+	//Metre = Mile * 1609;
 	
 	
-	printf("la distance metre est %f", Metre);
+	printf("la distance metre est %f", Mile * 1609);
 	
 	return 0;
 }
