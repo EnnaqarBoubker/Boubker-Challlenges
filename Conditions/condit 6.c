@@ -38,7 +38,7 @@ int main() {
 			break;
 			
 		case 5 :
-			Se = A * 365 * 24 * 604 * 60;
+			Se = A * 365 * 24 * 60 * 60;
 			printf("%d Secondes ", Se);
 	}
 	

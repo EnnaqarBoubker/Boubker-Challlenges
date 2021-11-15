@@ -3,19 +3,17 @@
 #include<stdlib.h>
 int main()
 {
-	int A, B, C;
+	int A, B, C , D;
 	
 	printf("donner moi un nomber Entire : \n");
-	 scanf("%d", &A);
+	 scanf("%d", &D);
 	 
 	
-	B = (A % 10) * 100;
-	A= A / 10;
-	B = B + (A % 10) * 10;
-	A = A / 10;
-	B = B + A;
-	C = A;
-	printf(" L'inverce %d  est le nomber %d", C,B );
+	A= ( D % 100) %  10;
+    B= (D % 100) /10;
+	C= D/ 100;
+	
+	printf(" L'inverce de nomber entier est le  %d%d%d",A,B,C );
 	
 	
 	return 0;

@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<ctype.h>
+//#include<ctype.h>
 
 int main()
 {
@@ -9,25 +9,25 @@ int main()
 	printf("donner une Lettre  : ");
 	 scanf("%c", &L);
 	 
-	L = tolower(L);
+    //L = tolower(L);
 	switch (L)
 	{
-		case'a':
-			printf("la lettre %c est voyelle", L);
+		case'a':case'A':
+	    	printf("la lettre %c est voyelle", L);
 			     break;
-	    case'e':
+	    case'e':case'E':
 	    	printf("la lettre %c est voyelle", L);
 	    	     break;
-	    case'i':
+	    case'i':case 'I':
 	    	printf("la lettre %c est voyelle", L);
 	    	     break;
-	    case'o':
+	    case'o' :case 'O':
 	    	printf("la lettre %c est voyelle", L);
 	    	     break;
-	    case'u':
+	    case'u' :case 'U':
 	    	printf("la lettre %c est voyelle", L);
 	    	     break;
-	    case'y':
+	    case'y' :case 'Y':
 	    	printf("la lettre %c est voyelle", L);
 	    	     break;
 	    
