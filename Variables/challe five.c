@@ -13,13 +13,13 @@ int main ()
 	
 	
 	
-	if (C <= 1)
+	if (C <= 5)
 	 printf("\n tres froid %.2f",C);
 	 
-	else if(C <= 10)
+	else if(C >= 5 && C <= 15)
 	 printf("\n froid %.2f", C);
 	 
-	else if(C <= 38)
+	else if(C >= 20 && C <= 35)
 	 printf("\n chaud %.2f",C);
 	 
 	 else 
