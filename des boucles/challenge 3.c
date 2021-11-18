@@ -1,23 +1,38 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
 int main()
 {
-	int X , i;
+	int N, i;
+	int Z = 0;
 	
-	printf("doner un nomber :");
-	 scanf("%d",&X);
+	printf("donner moi un nomber \n");
+	 scanf("%d", &N);
+
 	 
-	while(X < 1 || X > 16)
+	for(i=2; i<= N / 2;i++)
 	{
-		printf("doner un nomber \n");
-	    scanf("%d",&X);
-	}
-	for(i = 1; i <= 10; i++)
-	{
-		printf("%d * %d = %d\n", X, i, X * i);
-	}
 	
-	  return 0;
+		if( N % i == 0){
+	    	Z = 2;
+	    	break;
+	    }
+		
+	}	
+		if(Z == 0){
+	
+		    printf("le nombre premier");	}
+		else{
+	
+		    printf("le nombre pas premier");	}
+	
+		   return 0;
 }
+
+
+
+
+
+
+
+
