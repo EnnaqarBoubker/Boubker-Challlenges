@@ -4,25 +4,29 @@
 
 int main()
 {
-	int N, i, A;
+	
+	int N, i, A =0;
 	
 	
 	printf("donner moi un nomber \n");
 	 scanf("%d", &N);
 	 
 	 
-	 for (i= 2; i<= N/2; i++)
-	 
-	     A = N % i;
+	 for (i= 1; i<= N; i++){
+	 	
+	    if(N % i == 0)
+	    {
+	    A++;
+		}
+}
 	     
-	    if(A == 0){
-	    	printf("le nombre pas premier");
+	    if(A == 2){
+	    	printf("le nombre  premier");
 		}
 		else {
-			printf("le nombre premier");
+			printf("le nombre pas premier");
 		}
 
-	
 		   return 0;
 }
 
